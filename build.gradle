@@ -5,12 +5,12 @@ task wrapper(type: Wrapper) {
 }
 
 ext {
-	stardogVersion = project.hasProperty("stardogVersion") ? project.getProperty("stardogVersion") : '7.1.2'
+	stardogVersion = project.hasProperty("stardogVersion") ? project.getProperty("stardogVersion") : '7.4.0'
 	projectVersion = '0.0.6'
 
 	distPath = "${projectDir}/dist"
 	stardogRepo = project.hasProperty("stardogRepo") ? project.getProperty("stardogRepo") : "http://maven.stardog.com"
-	stardogLib = project.hasProperty("stardogLib") ? project.getProperty("stardogLib") : "."
+	stardogLib = project.hasProperty("stardogLib") ? project.getProperty("stardogLib") : "/Users/Capsifi/Downloads/stardog-7.4.0/lib"
 }
 
 allprojects {

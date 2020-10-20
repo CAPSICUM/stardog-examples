@@ -61,7 +61,7 @@ public class TestHttpHandler  {
 				aConn.drop(DB);
 			}
 
-			aConn.createMemory(DB);
+			aConn.disk(DB).create();
 		}
 	}
 

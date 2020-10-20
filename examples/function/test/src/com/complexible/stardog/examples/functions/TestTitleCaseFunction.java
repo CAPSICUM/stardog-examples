@@ -55,7 +55,7 @@ public class TestTitleCaseFunction {
 				aConn.drop(DB);
 			}
 
-			aConn.createMemory(DB);
+			aConn.disk(DB).create();
 		}
 	}
 
