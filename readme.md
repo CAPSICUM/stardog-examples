@@ -1,5 +1,18 @@
 [![Join the chat at https://gitter.im/Complexible/stardog-examples](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Complexible/stardog-examples?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
+# Capsifi Notes
+* Before executing the examples, change the correct version and address to the Stardog `lib` forlder in `build.gradle`. e.g.:
+```
+ext {
+	stardogVersion = project.hasProperty("stardogVersion") ? project.getProperty("stardogVersion") : '7.4.0'
+	projectVersion = '0.0.6'
+
+	distPath = "${projectDir}/dist"
+	stardogRepo = project.hasProperty("stardogRepo") ? project.getProperty("stardogRepo") : "http://maven.stardog.com"
+	stardogLib = project.hasProperty("stardogLib") ? project.getProperty("stardogLib") : "/Users/Capsifi/Downloads/stardog-7.4.0/lib"
+}
+```
+
 # Programming Stardog: Examples
 
 This is a small collection of examples of working with [Stardog](http://stardog.com) via its APIs, as
