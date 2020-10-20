@@ -12,6 +12,8 @@ ext {
 	stardogLib = project.hasProperty("stardogLib") ? project.getProperty("stardogLib") : "/Users/Capsifi/Downloads/stardog-7.4.0/lib"
 }
 ```
+* run `./gradlew execute` in the root folder for default tests to run
+* run `./gradlew run` in the `weblog/stardog-client/` folder for Capsifi tests implemented in `StardogClientRemote.java` to run 
 
 # Programming Stardog: Examples
 
